@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creative Direction &amp; Multimedia Showcase | Renzo Samia Buan</title>
+<meta name="description" content="Commercial video advertisements, campus broadcast programming, live event video showcases, and graphic design posters by Renzo Samia Buan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="bgCanvas"></canvas>
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="ambient-glow-1"></div>
+<div class="ambient-glow-2"></div>
+
+<!-- Navigation Bar -->
+<header class="nav">
+  <div class="wrap nav-wrap">
+    <a href="index.html" class="brand-logo" title="Return to Main Portfolio">
+      <div class="brand-icon">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </div>
+      <span>Renzo<span class="dot">.</span>buan</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">&larr; Main Portfolio</a></li>
+      <li><a href="#videos" class="nav-link active">Video Productions</a></li>
+      <li><a href="#graphics" class="nav-link">Graphic Design</a></li>
+      <li><a href="index.html#skills" class="nav-link">Tech Stack</a></li>
+      <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle visual theme" title="Toggle theme">
+        <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      </button>
+      <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+      <a href="index.html#contact" class="btn btn-primary btn-sm">Hire Me</a>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <a href="index.html" onclick="closeMobileNav()">&larr; Main Portfolio Overview</a>
+    <a href="#videos" onclick="closeMobileNav()">🎬 Video Productions (5 Edits)</a>
+    <a href="#graphics" onclick="closeMobileNav()">🎨 Graphic Design (4 Posters)</a>
+    <a href="index.html#skills" onclick="closeMobileNav()">Technology Stack</a>
+    <a href="index.html#contact" onclick="closeMobileNav()">Contact Renzo</a>
+  </div>
+</header>
+
+<main>
+  <!-- Media Header Section -->
+  <section class="media-header-section">
+    <div class="wrap">
+      <div class="status-pill">
+        <span class="pulse-indicator"></span>
+        <span>Creative Media &amp; Graphic Arts Portfolio &bull; 9 Total Productions</span>
+      </div>
+
+      <h1 class="hero-title" style="margin-top: 10px;">
+        Creative Direction, Motion &amp; <span class="highlight">Visual Design</span>.
+      </h1>
+
+      <p class="hero-subtitle">
+        Dual creative specialization spanning high-definition video productions, commercial brand storytelling, and high-impact graphic design promotional artwork.
+      </p>
+
+      <div class="hero-actions">
+        <a href="index.html" class="btn btn-secondary">
+          <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          <span>Return to Main Portfolio</span>
+        </a>
+        <a href="index.html#contact" class="btn btn-primary">
+          <span>Inquire About Media Projects</span>
+          <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+
+      <!-- Quick Stats Bar -->
+      <div class="media-stats-bar">
+        <div class="media-stat-item">
+          <span class="stat-icon">🎬</span>
+          <span>5 Video Master Tracks</span>
+        </div>
+        <div class="media-stat-divider"></div>
+        <div class="media-stat-item">
+          <span class="stat-icon">🎨</span>
+          <span>4 Graphic Design Posters</span>
+        </div>
+        <div class="media-stat-divider"></div>
+        <div class="media-stat-item">
+          <span class="stat-icon">⚡</span>
+          <span>Premiere Pro, Photoshop &amp; Canva</span>
+        </div>
+        <div class="media-stat-divider"></div>
+        <div class="media-stat-item">
+          <span class="stat-icon">✔</span>
+          <span>100% Client &amp; Org Delivery</span>
+        </div>
+      </div>
+
+      <!-- MASTER CATEGORY HUB CARDS -->
+      <div class="media-hub-grid">
+        <!-- Hub Card 1: Video Productions -->
+        <div class="media-hub-card active tilt-card" id="hubVideoCard" onclick="selectMediaHub('video')">
+          <div class="media-hub-top">
+            <div class="media-hub-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+            </div>
+            <span class="media-hub-badge">🎬 5 Productions &bull; 1080p HD</span>
+          </div>
+          <h2 class="media-hub-title">Video Post-Production &amp; Edits</h2>
+          <p class="media-hub-desc">Commercial advertisements, live stage pageant recaps, institutional campus broadcasts, and advocacy PSAs edited and mastered for broadcast impact.</p>
+          <div class="media-hub-tags">
+            <span class="media-hub-tag">LingapCare Commercial</span>
+            <span class="media-hub-tag">MX. Athena Recap</span>
+            <span class="media-hub-tag">DMC GAD Hour</span>
+            <span class="media-hub-tag">MR.MS.MX Pageant</span>
+            <span class="media-hub-tag">EVAW Campaign</span>
+          </div>
+          <div class="media-hub-btn">
+            <span>Explore Video Gallery (5 Videos) &darr;</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+          </div>
+        </div>
+
+        <!-- Hub Card 2: Graphic Design Productions -->
+        <div class="media-hub-card tilt-card" id="hubGraphicsCard" onclick="selectMediaHub('graphics')">
+          <div class="media-hub-top">
+            <div class="media-hub-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+            </div>
+            <span class="media-hub-badge">🎨 4 Graphic Works &bull; Print &amp; Digital</span>
+          </div>
+          <h2 class="media-hub-title">Graphic Design &amp; Visual Brand Assets</h2>
+          <p class="media-hub-desc">High-impact esports tournament posters, student organization induction invitations, and commemorative tribute celebration artwork crafted with Photoshop &amp; Canva.</p>
+          <div class="media-hub-tags">
+            <span class="media-hub-tag">MLBB Tournament Poster</span>
+            <span class="media-hub-tag">Valorant Championship</span>
+            <span class="media-hub-tag">Org Assembly Invitation</span>
+            <span class="media-hub-tag">Teacher's Day Celebration</span>
+          </div>
+          <div class="media-hub-btn">
+            <span>Explore Graphic Design Gallery (4 Designs) &darr;</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="media-filter-tabs" id="mediaFilterTabs">
+        <button class="tab-btn active" data-filter="all">All Creative Works (9)</button>
+        <button class="tab-btn" data-filter="video">🎬 Video Productions (5)</button>
+        <button class="tab-btn" data-filter="graphics">🎨 Graphic Design (4)</button>
+      </div>
+
+      <!-- ========================================================
+           SECTION 1: VIDEO PRODUCTIONS (5 Videos)
+           ======================================================== -->
+      <div class="media-group-header" id="videos" style="margin-top: 20px; margin-bottom: 24px;">
+        <div class="group-tag-pill">
+          <span class="pulse-indicator"></span>
+          <span>Motion Media &bull; 1080p Full HD</span>
+        </div>
+        <h2 style="font-size: 26px; font-weight: 800; color: var(--text-main); margin-bottom: 6px;">Video Productions &amp; Motion Reel</h2>
+        <p style="font-size: 14px; color: var(--text-muted); max-width: 680px;">Native high-definition video playback with interactive timeline controls, audio mastering, and creative editing breakdowns.</p>
+      </div>
+
+      <div class="media-grid" id="videoGrid">
+
+        <!-- Video 1: LingapCare Commercial Ad -->
+        <article class="media-panel border-beam-card tilt-card" data-type="video" data-category="ad">
+          <div class="media-panel-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="media-panel-title">
+              <span class="tech-tag">&lt;COMMERCIAL_AD&gt;</span>
+              <span>LingapCare_Full_Ad.mp4</span>
+            </div>
+            <span class="media-panel-badge">1080p &bull; MP4</span>
+          </div>
+
+          <div class="media-video-wrap">
+            <iframe
+              class="media-video-player"
+              src="https://www.youtube.com/embed/evir_aFpkuI"
+              title="LingapCare Brand Commercial"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="media-panel-body">
+            <span class="media-category-chip">Commercial &amp; Brand Storytelling</span>
+            <h2 class="media-project-title">LingapCare Brand Commercial &amp; Promotional Ad</h2>
+            <p class="media-project-desc">
+              Full promotional video advertisement highlighting brand mission, community care services, and call-to-action storytelling. Structured with pacing that balances patient trust with clean corporate branding.
+            </p>
+
+            <div class="media-tool-chips">
+              <span class="media-tool-chip">Adobe Premiere Pro</span>
+              <span class="media-tool-chip">Photoshop</span>
+              <span class="media-tool-chip">Audio Mastering</span>
+              <span class="media-tool-chip">Motion Graphics</span>
+            </div>
+
+            <div class="media-panel-footer">
+              <span class="media-specs-label">Codec: H.264 &bull; AAC Audio</span>
+              <span class="media-specs-label">Runtime: 0:58</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Video 2: MX. ATHENA -->
+        <article class="media-panel border-beam-card tilt-card" data-type="video" data-category="event">
+          <div class="media-panel-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="media-panel-title">
+              <span class="tech-tag">&lt;STAGE_RECAP&gt;</span>
+              <span>MX. ATHENA.mov</span>
+            </div>
+            <span class="media-panel-badge">1080p &bull; MOV</span>
+          </div>
+
+          <div class="media-video-wrap">
+            <iframe
+              class="media-video-player"
+              src="https://www.youtube.com/embed/67EdkmkMq_E"
+              title="Mx. Athena Live Pageant Recap"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="media-panel-body">
+            <span class="media-category-chip">Event &amp; Stage Production</span>
+            <h2 class="media-project-title">Mx. Athena Live Pageant &amp; Talent Showcase Reel</h2>
+            <p class="media-project-desc">
+              Dynamic event highlights film cut with rhythmic beat-matching, energetic crowd ambiance, and multi-camera stage transitions capturing talent portions, evening gowns, and crowning moments.
+            </p>
+
+            <div class="media-tool-chips">
+              <span class="media-tool-chip">Premiere Pro</span>
+              <span class="media-tool-chip">Color Grading</span>
+              <span class="media-tool-chip">Beat-Synchronized Cut</span>
+              <span class="media-tool-chip">Multi-Cam Sync</span>
+            </div>
+
+            <div class="media-panel-footer">
+              <span class="media-specs-label">Codec: ProRes/H.264 &bull; 60 FPS</span>
+              <span class="media-specs-label">Live Stage Audio</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Video 3: DMC GAD HOUR -->
+        <article class="media-panel border-beam-card tilt-card" data-type="video" data-category="broadcast">
+          <div class="media-panel-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="media-panel-title">
+              <span class="tech-tag">&lt;BROADCAST&gt;</span>
+              <span>DMC GAD HOUR.mp4</span>
+            </div>
+            <span class="media-panel-badge">1080p &bull; MP4</span>
+          </div>
+
+          <div class="media-video-wrap">
+            <iframe
+              class="media-video-player"
+              src="https://www.youtube.com/embed/i1PJzgDQ454"
+              title="DMC Gender and Development Educational Broadcast"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="media-panel-body">
+            <span class="media-category-chip">Campus Broadcast &amp; Advocacy</span>
+            <h2 class="media-project-title">DMC Gender and Development (GAD) Educational Broadcast</h2>
+            <p class="media-project-desc">
+              Formal institutional broadcast programming produced for university social channels. Features lower-third titling, balanced studio audio equalization, keynote presentation overlays, and interview framing.
+            </p>
+
+            <div class="media-tool-chips">
+              <span class="media-tool-chip">Adobe Premiere Pro</span>
+              <span class="media-tool-chip">Lower Thirds</span>
+              <span class="media-tool-chip">Voice Normalization</span>
+              <span class="media-tool-chip">Informational GFX</span>
+            </div>
+
+            <div class="media-panel-footer">
+              <span class="media-specs-label">Format: 1920x1080 Institutional</span>
+              <span class="media-specs-label">Audio: Clean Dialogue</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Video 4: MR.MS.MX DMC -->
+        <article class="media-panel border-beam-card tilt-card" data-type="video" data-category="event">
+          <div class="media-panel-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="media-panel-title">
+              <span class="tech-tag">&lt;PAGEANT_SHOWCASE&gt;</span>
+              <span>MR.MS.MX DMC.mp4</span>
+            </div>
+            <span class="media-panel-badge">1080p &bull; MP4</span>
+          </div>
+
+          <div class="media-video-wrap">
+            <iframe
+              class="media-video-player"
+              src="https://www.youtube.com/embed/CEiIVrb8J1E"
+              title="Mr. Ms. Mx. DMC Grand Coronation"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="media-panel-body">
+            <span class="media-category-chip">Grand Stage &amp; Pageantry</span>
+            <h2 class="media-project-title">Mr., Ms. &amp; Mx. DMC Grand Coronation Production</h2>
+            <p class="media-project-desc">
+              Flagship university pageant recap tracking candidate introductions, casual wear runways, Q&amp;A highlights, and finale awards. Edited with dynamic speed ramping and color-calibrated stage illumination.
+            </p>
+
+            <div class="media-tool-chips">
+              <span class="media-tool-chip">Adobe Premiere Pro</span>
+              <span class="media-tool-chip">Speed Ramping</span>
+              <span class="media-tool-chip">Lighting Adjustment</span>
+              <span class="media-tool-chip">Atmospheric SFX</span>
+            </div>
+
+            <div class="media-panel-footer">
+              <span class="media-specs-label">Master Resolution: 1080p FHD</span>
+              <span class="media-specs-label">Stereo Track Mastered</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Video 5: EVAW Campaign Video -->
+        <article class="media-panel border-beam-card tilt-card" data-type="video" data-category="broadcast">
+          <div class="media-panel-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="media-panel-title">
+              <span class="tech-tag">&lt;ADVOCACY_PSA&gt;</span>
+              <span>EVAW.mov</span>
+            </div>
+            <span class="media-panel-badge">1080p &bull; MOV</span>
+          </div>
+
+          <div class="media-video-wrap">
+            <iframe
+              class="media-video-player"
+              src="https://www.youtube.com/embed/z54T1xcXoPE"
+              title="End Violence Against Women Campaign PSA"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="media-panel-body">
+            <span class="media-category-chip">Social Impact &amp; Campaign PSA</span>
+            <h2 class="media-project-title">End Violence Against Women (EVAW) Campaign Awareness</h2>
+            <p class="media-project-desc">
+              Cinematic advocacy campaign piece produced for gender sensitivity and human rights awareness. Features dramatic narrative transitions, poignant voiceover synchronization, and high-impact typographic messaging.
+            </p>
+
+            <div class="media-tool-chips">
+              <span class="media-tool-chip">Premiere Pro</span>
+              <span class="media-tool-chip">Cinematic Grading</span>
+              <span class="media-tool-chip">Sound Design</span>
+              <span class="media-tool-chip">Typography Animation</span>
+            </div>
+
+            <div class="media-panel-footer">
+              <span class="media-specs-label">Master Bitrate: High-Definition</span>
+              <span class="media-specs-label">Public Sector Standard</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- ========================================================
+           SECTION 2: GRAPHIC DESIGN PRODUCTIONS (4 Posters)
+           ======================================================== -->
+      <div class="media-group-header" id="graphics" style="margin-top: 60px; margin-bottom: 24px;">
+        <div class="group-tag-pill">
+          <span class="pulse-indicator" style="background-color: var(--primary);"></span>
+          <span>Graphic Arts &bull; Posters, Invitations &amp; Banners</span>
+        </div>
+        <h2 style="font-size: 26px; font-weight: 800; color: var(--text-main); margin-bottom: 6px;">Graphic Design &amp; Promotional Media</h2>
+        <p style="font-size: 14px; color: var(--text-muted); max-width: 680px;">High-resolution promotional key visuals, official academic organization invitation assets, and celebratory tribute posters crafted in Photoshop &amp; Canva.</p>
+      </div>
+
+      <div class="media-grid" id="graphicsGrid">
+
+        <!-- Graphic 1: MLBB Tournament Poster -->
+        <article class="media-panel border-beam-card tilt-card" data-type="graphics" data-category="esports">
+          <div class="media-panel-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="media-panel-title">
+              <span class="tech-tag">&lt;ESPORTS_POSTER&gt;</span>
+              <span>MLBB Tournament.png</span>
+            </div>
+            <span class="media-panel-badge">1080&times;1080 &bull; PNG</span>
+          </div>
+
+          <div class="graphics-img-wrap" onclick="openLightbox('MLBB Tournament.png', 'Mobile Legends: Bang Bang Tournament Official Poster', '1080 &times; 1080 Square Format &bull; Esports Gaming Key Visual')">
+            <img src="MLBB Tournament.png" alt="Mobile Legends Tournament Official Poster by Renzo Samia Buan" class="graphics-img" loading="lazy">
+            <div class="graphics-overlay">
+              <div class="graphics-zoom-pill">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>Click to View Full Size</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="media-panel-body">
+            <span class="media-category-chip">Esports Key Visual &amp; Tournament Promo</span>
+            <h2 class="media-project-title">Mobile Legends: Bang Bang Tournament Official Poster</h2>
+            <p class="media-project-desc">
+              Dynamic esports tournament promotional graphic created with Photoshop. Features aggressive game typography, glowing vector lighting, character compositions, and registration bracket announcements designed for maximum engagement.
+            </p>
+
+            <div class="media-tool-chips">
+              <span class="media-tool-chip">Adobe Photoshop</span>
+              <span class="media-tool-chip">Esports Key Visual</span>
+              <span class="media-tool-chip">Vector Lighting</span>
+              <span class="media-tool-chip">Typography</span>
+            </div>
+
+            <div class="media-panel-footer">
+              <span class="media-specs-label">Resolution: 1080 &times; 1080</span>
+              <span class="media-specs-label">Format: Square Feed Standard</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Graphic 2: Valorant Tournament Poster -->
+        <article class="media-panel border-beam-card tilt-card" data-type="graphics" data-category="esports">
+          <div class="media-panel-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="media-panel-title">
+              <span class="tech-tag">&lt;TACTICAL_ESPORTS&gt;</span>
+              <span>Valorant Tournament.png</span>
+            </div>
+            <span class="media-panel-badge">1080&times;1080 &bull; PNG</span>
+          </div>
+
+          <div class="graphics-img-wrap" onclick="openLightbox('Valorant Tournament.png', 'Valorant Campus Championship Tournament Poster', '1080 &times; 1080 Square Format &bull; Tactical Esports Key Visual')">
+            <img src="Valorant Tournament.png" alt="Valorant Tournament Poster by Renzo Samia Buan" class="graphics-img" loading="lazy">
+            <div class="graphics-overlay">
+              <div class="graphics-zoom-pill">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>Click to View Full Size</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="media-panel-body">
+            <span class="media-category-chip">Tactical Gaming &amp; Event Key Visual</span>
+            <h2 class="media-project-title">Valorant Campus Championship Tournament Poster</h2>
+            <p class="media-project-desc">
+              High-octane tactical gaming banner designed for campus esports competition. Highlights agent silhouettes, neon cyber accents, atmospheric smoke grading, and clear registration guidelines calibrated for digital promotion.
+            </p>
+
+            <div class="media-tool-chips">
+              <span class="media-tool-chip">Adobe Photoshop</span>
+              <span class="media-tool-chip">Canva Pro</span>
+              <span class="media-tool-chip">Cyberpunk Aesthetic</span>
+              <span class="media-tool-chip">Color Grading</span>
+            </div>
+
+            <div class="media-panel-footer">
+              <span class="media-specs-label">Resolution: 1080 &times; 1080</span>
+              <span class="media-specs-label">RGB Display Profile</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Graphic 3: Org Invitation Poster -->
+        <article class="media-panel border-beam-card tilt-card" data-type="graphics" data-category="org">
+          <div class="media-panel-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="media-panel-title">
+              <span class="tech-tag">&lt;OFFICIAL_STATIONERY&gt;</span>
+              <span>Org Invitation.png</span>
+            </div>
+            <span class="media-panel-badge">3375&times;3375 &bull; PNG</span>
+          </div>
+
+          <div class="graphics-img-wrap" onclick="openLightbox('Org Invitation.png', 'Student Organization Induction &amp; General Assembly Invitation', '3375 &times; 3375 High-Res &bull; Official Academic Stationery')">
+            <img src="Org Invitation.png" alt="Student Organization Official Invitation by Renzo Samia Buan" class="graphics-img" loading="lazy">
+            <div class="graphics-overlay">
+              <div class="graphics-zoom-pill">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>Click to View Full Size</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="media-panel-body">
+            <span class="media-category-chip">Academic Leadership &amp; Official Collateral</span>
+            <h2 class="media-project-title">Student Organization Induction &amp; General Assembly Invitation</h2>
+            <p class="media-project-desc">
+              Formal executive invitation card and social media release designed for student council and academic organization onboarding. Utilizes balanced minimalist layout, refined typography, and official crest placement for corporate authority.
+            </p>
+
+            <div class="media-tool-chips">
+              <span class="media-tool-chip">Photoshop &amp; Canva</span>
+              <span class="media-tool-chip">Layout Composition</span>
+              <span class="media-tool-chip">Executive Branding</span>
+              <span class="media-tool-chip">Corporate Style</span>
+            </div>
+
+            <div class="media-panel-footer">
+              <span class="media-specs-label">Resolution: 3375 &times; 3375 (Ultra-HD)</span>
+              <span class="media-specs-label">Print &amp; Digital Ready</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Graphic 4: Teacher's Day Poster -->
+        <article class="media-panel border-beam-card tilt-card" data-type="graphics" data-category="org">
+          <div class="media-panel-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="media-panel-title">
+              <span class="tech-tag">&lt;COMMEMORATIVE_PRINT&gt;</span>
+              <span>Teacher's Day Poster.png</span>
+            </div>
+            <span class="media-panel-badge">8640&times;8640 &bull; PNG</span>
+          </div>
+
+          <div class="graphics-img-wrap" onclick="openLightbox('Teacher\'s Day Poster.png', 'World Teachers\' Day Tribute &amp; Celebration Poster', '8640 &times; 8640 Master Print &bull; Large Format University Poster')">
+            <img src="Teacher's Day Poster.png" alt="World Teachers Day Celebration Poster by Renzo Samia Buan" class="graphics-img" loading="lazy">
+            <div class="graphics-overlay">
+              <div class="graphics-zoom-pill">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>Click to View Full Size</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="media-panel-body">
+            <span class="media-category-chip">Commemorative Artwork &amp; Celebration</span>
+            <h2 class="media-project-title">World Teachers' Day Tribute &amp; Commemorative Poster</h2>
+            <p class="media-project-desc">
+              Master-grade 8640&times;8640 resolution celebratory tribute poster crafted for university-wide social release and large-format physical print banners. Features warm celebratory motifs, heartfelt gratitude messaging, and intricate digital artwork.
+            </p>
+
+            <div class="media-tool-chips">
+              <span class="media-tool-chip">Adobe Photoshop</span>
+              <span class="media-tool-chip">Large-Format Print (8K)</span>
+              <span class="media-tool-chip">Vector Illustration</span>
+              <span class="media-tool-chip">Visual Storytelling</span>
+            </div>
+
+            <div class="media-panel-footer">
+              <span class="media-specs-label">Resolution: 8640 &times; 8640 Master</span>
+              <span class="media-specs-label">300 DPI Large Format</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Collaboration Callout -->
+  <section class="contact-section" style="padding: 60px 0;">
+    <div class="wrap">
+      <div class="contact-box border-beam-card" style="text-align: center; max-width: 760px; margin: 0 auto;">
+        <span class="section-tag">Collaboration &amp; Bookings</span>
+        <h2 style="font-size: 28px; font-weight: 800; margin: 12px 0 10px;">Need High-Impact Video Editing or Graphic Design?</h2>
+        <p style="font-size: 14.5px; color: var(--text-muted); line-height: 1.6; margin-bottom: 24px;">
+          Available for commercial promo edits, corporate branding assets, social media video management, and event graphics with fast turnaround and strict brand compliance.
+        </p>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <a href="index.html#contact" class="btn btn-primary">Initiate Collaboration</a>
+          <a href="index.html" class="btn btn-secondary">&larr; Return to IT &amp; Admin Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Lightbox Modal -->
+<div class="lightbox-modal" id="lightboxModal" onclick="closeLightboxOnBackdrop(event)">
+  <button class="lightbox-close-btn" onclick="closeLightbox()" aria-label="Close Lightbox">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+  </button>
+  <img src="" alt="Enlarged graphic artwork" class="lightbox-img" id="lightboxImg">
+  <div class="lightbox-meta">
+    <div class="lightbox-title" id="lightboxTitle"></div>
+    <div class="lightbox-sub" id="lightboxSub"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>&copy; 2026 Renzo Samia Buan &bull; Creative Direction &amp; Multimedia Productions</div>
+    <div>Monochrome &bull; White &amp; Grey Minimal Design System</div>
+  </div>
+</footer>
+
+<script>
+// Theme Management
+const themeToggle = document.getElementById("themeToggle");
+const savedTheme = localStorage.getItem("theme") || "light";
+document.documentElement.dataset.theme = savedTheme;
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const current = document.documentElement.dataset.theme;
+    const next = current === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    localStorage.setItem("theme", next);
+  });
+}
+
+// Mobile Menu
+const mobileBtn = document.getElementById("mobileMenuBtn");
+const mobileDrawer = document.getElementById("mobileDrawer");
+if (mobileBtn && mobileDrawer) {
+  mobileBtn.addEventListener("click", () => {
+    mobileDrawer.classList.toggle("open");
+  });
+}
+function closeMobileNav() {
+  if (mobileDrawer) mobileDrawer.classList.remove("open");
+}
+
+// Single-Playback Audio/Video Manager
+const videos = document.querySelectorAll(".media-video-player");
+videos.forEach(video => {
+  video.addEventListener("play", () => {
+    videos.forEach(other => {
+      if (other !== video && !other.paused) {
+        other.pause();
+      }
+    });
+  });
+});
+
+// Category Filter Tabs
+const tabBtns = document.querySelectorAll("#mediaFilterTabs .tab-btn");
+const videoHeader = document.getElementById("videos");
+const videoGrid = document.getElementById("videoGrid");
+const graphicsHeader = document.getElementById("graphics");
+const graphicsGrid = document.getElementById("graphicsGrid");
+
+function applyMediaFilter(filter) {
+  tabBtns.forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.filter === filter);
+  });
+
+  if (filter === "all") {
+    if (videoHeader) videoHeader.style.display = "block";
+    if (videoGrid) videoGrid.style.display = "grid";
+    if (graphicsHeader) graphicsHeader.style.display = "block";
+    if (graphicsGrid) graphicsGrid.style.display = "grid";
+  } else if (filter === "video") {
+    if (videoHeader) videoHeader.style.display = "block";
+    if (videoGrid) videoGrid.style.display = "grid";
+    if (graphicsHeader) graphicsHeader.style.display = "none";
+    if (graphicsGrid) graphicsGrid.style.display = "none";
+  } else if (filter === "graphics") {
+    if (videoHeader) videoHeader.style.display = "none";
+    if (videoGrid) videoGrid.style.display = "none";
+    if (graphicsHeader) graphicsHeader.style.display = "block";
+    if (graphicsGrid) graphicsGrid.style.display = "grid";
+  }
+}
+
+tabBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    applyMediaFilter(btn.dataset.filter);
+  });
+});
+
+// Master Hub Cards Click Handlers
+function selectMediaHub(type) {
+  const hubVideo = document.getElementById("hubVideoCard");
+  const hubGraphics = document.getElementById("hubGraphicsCard");
+
+  if (type === "video") {
+    if (hubVideo) hubVideo.classList.add("active");
+    if (hubGraphics) hubGraphics.classList.remove("active");
+    applyMediaFilter("video");
+    const target = document.getElementById("videos");
+    if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+  } else if (type === "graphics") {
+    if (hubGraphics) hubGraphics.classList.add("active");
+    if (hubVideo) hubVideo.classList.remove("active");
+    applyMediaFilter("graphics");
+    const target = document.getElementById("graphics");
+    if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+// Lightbox System
+const lightboxModal = document.getElementById("lightboxModal");
+const lightboxImg = document.getElementById("lightboxImg");
+const lightboxTitle = document.getElementById("lightboxTitle");
+const lightboxSub = document.getElementById("lightboxSub");
+
+function openLightbox(src, title, sub) {
+  if (!lightboxModal) return;
+  lightboxImg.src = src;
+  lightboxTitle.innerHTML = title;
+  lightboxSub.innerHTML = sub;
+  lightboxModal.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeLightbox() {
+  if (!lightboxModal) return;
+  lightboxModal.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+function closeLightboxOnBackdrop(e) {
+  if (e.target === lightboxModal || e.target.classList.contains("lightbox-modal")) {
+    closeLightbox();
+  }
+}
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeLightbox();
+  }
+});
+
+// Constellation Background Particles
+const bgCanvas = document.getElementById("bgCanvas");
+if (bgCanvas) {
+  const ctx = bgCanvas.getContext("2d");
+  let width = bgCanvas.width = window.innerWidth;
+  let height = bgCanvas.height = window.innerHeight;
+  let particles = [];
+  const particleCount = Math.min(Math.floor((width * height) / 24000), 45);
+
+  function getThemeColors() {
+    const isDark = document.documentElement.dataset.theme === "dark";
+    return {
+      node: isDark ? "rgba(244, 244, 245, 0.25)" : "rgba(24, 24, 27, 0.12)",
+      line: isDark ? "rgba(244, 244, 245, 0.06)" : "rgba(24, 24, 27, 0.04)"
+    };
+  }
+
+  class Particle {
+    constructor() {
+      this.x = Math.random() * width;
+      this.y = Math.random() * height;
+      this.vx = (Math.random() - 0.5) * 0.45;
+      this.vy = (Math.random() - 0.5) * 0.45;
+      this.radius = Math.random() * 1.6 + 0.8;
+    }
+    update() {
+      this.x += this.vx;
+      this.y += this.vy;
+      if (this.x < 0) this.x = width;
+      if (this.x > width) this.x = 0;
+      if (this.y < 0) this.y = height;
+      if (this.y > height) this.y = 0;
+    }
+    draw(colors) {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.fillStyle = colors.node;
+      ctx.fill();
+    }
+  }
+
+  for (let i = 0; i < particleCount; i++) particles.push(new Particle());
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+    const colors = getThemeColors();
+    for (let i = 0; i < particles.length; i++) {
+      particles[i].update();
+      particles[i].draw(colors);
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 110) {
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.strokeStyle = colors.line;
+          ctx.lineWidth = 1 - (dist / 110);
+          ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(animate);
+  }
+  animate();
+
+  window.addEventListener("resize", () => {
+    width = bgCanvas.width = window.innerWidth;
+    height = bgCanvas.height = window.innerHeight;
+  });
+}
+</script>
+</body>
+</html>
