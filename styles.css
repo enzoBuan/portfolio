@@ -2076,3 +2076,313 @@ footer .wrap {
   color: #a1a1aa;
   font-family: var(--font-mono);
 }
+
+/* ==========================================================================
+   TIKTOK & SOCIAL GLASS INTERACTION COMPONENTS
+   ========================================================================== */
+
+/* Hero Social Strip */
+.hero-social-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  width: fit-content;
+  max-width: 100%;
+}
+[data-theme="dark"] .hero-social-strip {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.social-strip-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-left: 2px;
+}
+.social-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-main);
+  text-decoration: none;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.social-pill-btn:hover {
+  background: var(--surface-hover);
+  border-color: #00f2fe;
+  box-shadow: 0 4px 14px rgba(0, 242, 254, 0.2);
+  transform: translateY(-1.5px);
+  color: var(--text-main);
+}
+[data-theme="dark"] .social-pill-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+[data-theme="dark"] .social-pill-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #00f2fe;
+  box-shadow: 0 6px 18px rgba(0, 242, 254, 0.25);
+}
+.social-pill-btn .tiktok-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: var(--text-main);
+}
+.social-badge {
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: var(--bg-alt);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+[data-theme="dark"] .social-badge {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.social-pill-btn .arrow-ext {
+  opacity: 0.5;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.social-pill-btn:hover .arrow-ext {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
+/* Timeline Experience Direct Social Callout */
+.timeline-social-callout {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border);
+}
+.tiktok-chip-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 13px;
+  color: var(--text-main);
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+[data-theme="dark"] .tiktok-chip-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.tiktok-chip-btn:hover {
+  background: var(--surface-hover);
+  border-color: #fe2c55;
+  box-shadow: 0 4px 16px rgba(254, 44, 85, 0.2);
+  transform: translateY(-2px);
+  color: var(--text-main);
+}
+.chip-badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: rgba(254, 44, 85, 0.1);
+  color: #fe2c55;
+  font-weight: 600;
+}
+[data-theme="dark"] .chip-badge {
+  background: rgba(254, 44, 85, 0.18);
+  color: #ff5b79;
+}
+
+/* Contact Section TikTok Glass Cards */
+.contact-social-section {
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+  text-align: left;
+}
+.contact-social-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.social-header-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+.social-header-title {
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+.contact-social-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.social-glass-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  text-decoration: none;
+  color: var(--text-main);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+}
+[data-theme="dark"] .social-glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+.social-glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+.social-glass-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  background: var(--surface-hover);
+}
+[data-theme="dark"] .social-glass-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+.social-glass-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+.social-glass-card:hover .social-glass-icon {
+  transform: scale(1.08);
+}
+.social-glass-icon.tiktok-glow {
+  background: linear-gradient(135deg, rgba(0, 242, 254, 0.15), rgba(254, 44, 85, 0.15));
+  border: 1px solid rgba(0, 242, 254, 0.3);
+  color: var(--text-main);
+}
+.social-glass-icon.cafe-glow {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(239, 68, 68, 0.15));
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: var(--text-main);
+}
+.social-glass-info {
+  flex: 1;
+  min-width: 0;
+}
+.social-handle {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-main);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.social-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+}
+.social-action-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  background: var(--primary);
+  color: var(--surface);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+[data-theme="dark"] .social-action-pill {
+  background: #ffffff;
+  color: #09090b;
+}
+.social-glass-card:hover .social-action-pill {
+  transform: translateX(2px);
+}
+
+/* Footer Social Links */
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.18s ease;
+}
+.footer-social-link:hover {
+  color: var(--text-main);
+}
+.footer-dot {
+  color: var(--border);
+  font-size: 12px;
+}
+
+/* Responsive adjustment for social cards */
+@media (max-width: 640px) {
+  .contact-social-buttons {
+    grid-template-columns: 1fr;
+  }
+  .hero-social-strip {
+    border-radius: 16px;
+    width: 100%;
+  }
+}
